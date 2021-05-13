@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="Rolito.png">
+        <link type="text/css" href="rolito1.css" rel="stylesheet">
+        <title>
+            Contact Us
+        </title>
+    </head>
+    <body>
+        <header>
+            <img src="Rolito.png" alt="">
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="Contact">
+            <h1>Contact us</h1><br><br>            
+            <h2> Send us a message</h2><br>
+            <form action="datos.js" method="POST" enctype="application/x-www-form-urlencoded">
+                <label for="name" class="message"> Your Name: </label><br>
+                <input type="text" class="message" name="name" id="name" maxlength="15"required><br>
+                <label for="lastName" class="message"> Your Last Name: </label><br>
+                <input type="text" class="message" name="lastName" id="lastName" maxlength="15" required><br>
+                <label for="number" class="message"> Your Phone Number: </label><br>
+                <input type="number" class="message" name="number" id="number" maxlength="10"><br>
+                <label for="email" class="message">Your Email Address:</label><br>
+                <input type="email" class="message" name="email" id="email" maxlength="15" required><br><br>
+                <p class="select">Choose one</p><br>
+                <input type="radio" name='select' value="complain" class="select"> <label for="select" class="select"> Complain</label>
+                <input type="radio" name='select' value="Claim" class="select"> <label for="select" class="select"> Claim</label>
+                <input type="radio" name='select' value="congrats" class="select"> <label for="select" class="select"> Congrats</label>
+                <input type="radio" name='select' value="comments"  class="select"> <label for="select" class="select"> Comments</label><br><br>
+                <textarea name="coments" id="contact" cols="50" rows="10"></textarea><br><br>
+                <input type="submit" value="enviar" id="enviar" class="enviar"><br><br>
+            </form>
+            <h2> Send me a e-mail:</h2><br>
+            <a href="mailto:vivianapalencia@gmail.com">Contact me</a><br><br>
+            <h3>or</h3><br><br>
+            <h2> Write me by WhatsApp:</h2><br>
+            <p>Phone Number: +57 3108778860</p>
+        </div>
+
+    
+    </body>
+</html>

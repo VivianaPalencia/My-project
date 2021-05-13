@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="Rolito.png">
+        <link type="text/css" href="rolito1.css" rel="stylesheet">
+        <title>
+            Welcome to RolitoShop!
+            Registration Form
+        </title>
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <img src="Rolito.png" alt="">
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <li><a href="index1.html">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="About.html" target="_self">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <br><br>
+            <section class="Login-Form">
+                <form action="datos.js" method="POST" enctype="application/x-www-form-urlencoded">
+                    <fieldset class="Login">
+                        <legend>Login</legend>
+                        <label for="email" class="Login">Email Address:</label><br>
+                        <input type="email" class="Login" name="email" placeholder="Enter your email" id="email" required><br>
+                        <label for="password" class="Login">Password:</label><br>
+                        <input type="password" class="Login" name="password" placeholder="At least 8 characters" minlength="8" id="password" required><br>
+                        <input type="submit" value="Login" id="Login" class="botton">
+                    </fieldset> 
+                </form>
+            </section>
+            <aside class="form-register">
+                <form action="datos.js" method="POST" enctype="application/x-www-form-urlencoded">
+                    <fieldset class="NewAccount">
+                        <legend>New Account</legend>
+                        <label for="Username" class="NewAccount">User Name:</label><br>
+                        <input type="text" class="NewAccount" name="Username" placeholder="At least 8 characters" maxlength="15" minlength="8" id="Username" required ><br>
+                        <label for="emailNew" class="NewAccount">Email:</label><br>
+                        <input type="email" class="NewAccount" name="emailNew" placeholder="Enter your email" id="emailNew" required><br>
+                        <label for="passwordNew" class="NewAccount">Password:</label><br>
+                        <input type="password" class="NewAccount" name="passwordNew" placeholder="At least 8 characters" minlength="8" id="passwordNew" required><br>
+                        <br><br>
+                        <p>I agree with <a href="">Terms and Conditions</a></p>
+                        <input type="submit" value="Register" id="register" class="BottonReg">
+                    </fieldset>
+                </form>
+            </aside>
+        </div>
+    </body>
+</html>
